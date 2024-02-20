@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotecas JQuery</title>
+    <!-- Referencia a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Referencia a jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Referencia a Bootstrap JS y Popper.js (necesario para componentes de Bootstrap como tooltips y modals) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1>Bibliotecas JQuery</h1>
+
+        <!-- Botón que activa un modal de Bootstrap -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">
+            Ir a Google
+        </button>
+
+        <!-- Modal de Bootstrap -->
+      <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Esta pagina dice</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Has pulsado el enlace... ahora seras redireccionado a Google
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Al hacer clic en este botón, se redireccionará a Google -->
+                        <button type="button" class="btn btn-secondary" id="redirectBtn" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Función para redireccionar al usuario a Google
+        document.getElementById('redirectBtn').addEventListener('click', function() {
+            window.location.href = 'https://www.google.com';
+        });
+    </script>
+
+</body>
+</html>

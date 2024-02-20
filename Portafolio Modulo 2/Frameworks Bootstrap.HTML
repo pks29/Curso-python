@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework Bootstrap</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 90%;
+        }
+
+        .section1 {
+           
+            width: 90%;
+        }
+
+        .left-column {
+            width: 35%;
+            padding: 20px;
+        }
+
+        .right-column {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .sub-section {
+            display: flex;
+            margin-top: 0px;
+        }
+
+        .sub-column {
+           
+            padding: 0px;
+            margin-right: 20px;
+        }
+
+        .btn {
+            background-color: #007bff; /* Azul */
+            color: #fff; /* Blanco */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+        }
+
+        .btn1 {
+            background-color: #ffffff; /* Azul */
+            color: #2b2b2b; /* Blanco */
+            border: 1px solid #2b2b2b;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn1:hover:hover {
+            background-color: #ffffff; /* Azul más oscuro al pasar el mouse */
+            }   
+            
+            .navbar {
+            background-color: #333; /* Fondo gris oscuro */
+            color: #fff; /* Texto blanco */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555; /* Color de fondo oscuro al pasar el mouse */
+        }
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+
+
+            </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-items">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="ruta/a/tu/logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section1">
+        <h1 style="title">¡Hello world!</h1>
+
+                    <p>Este es uno de los mejores cursos de programación para principiantes y para aprender los fundamentos
+                    de la programación genérica. Además, se utiliza como curso básico de programación en el MIT, es decir,
+                    en la programación para principiantes.</p>
+
+                    <button class="btn">Seguir Viendo</button>
+
+        </div>
+
+        <div class="section">
+            <div class="right-column">
+                <h2>Heading</h2>
+            
+                        <p>Este es uno de los mejores libros de programación para principiantes y para aprender los fundamentos
+                        de la programación genérica. Además, se utiliza como curso básico de programación en el MIT, es decir,
+                        en la programación para principiantes. Este es uno de los mejores libros de programación para principiantes y para aprender los fundamentos
+                        de la programación genérica. Además, se utiliza como curso básico de programación en el MIT, es decir,
+                        en la programación para principiantes.</p>
+
+                <br/>
+
+                <div class="sub-section">
+                    <div class="sub-column">
+                        <div>
+                            <h2>Heading</h2>
+                            <p>Este es uno de los mejores libros de programación para principiantes y para aprender los fundamentos
+                                de la programación genérica. Además, se utiliza como curso básico de programación en el MIT, es decir,
+                                en la programación para principiantes.</p>
+                                <button class="btn1">Seguir Viendo</button>
+                        </div>
+                    </div>
+                    <div class="sub-column">
+                        <div>
+                            <h2>Heading</h2>
+                            <p>Este es uno de los mejores libros de programación para principiantes y para aprender los fundamentos
+                                de la programación genérica. Además, se utiliza como curso básico de programación en el MIT, es decir,
+                                en la programación para principiantes.</p>
+                                <button class="btn1">Seguir Viendo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="left-column">
+                <h2>Heading</h2>
+                    <p>Este es uno de los mejores libros de programación para principiantes y para aprender los fundamentos
+                        de la programación genérica. Además, se utiliza como curso básico de programación en el MIT, es decir,
+                        en la programación para principiantes.</p>
+                        <button class="btn1">Seguir Viendo</button>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
